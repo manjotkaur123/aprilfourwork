@@ -14,7 +14,7 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <asp:Label runat="server" Text="Label"></asp:Label><asp:Label runat="server" Text="Label"></asp:Label>
 </head>
 <body>
     <form runat="server">
@@ -51,8 +51,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home Manjot</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/About">About Mnajot</a></li>
+                        <li><a runat="server" href="~/Contact">Contact manjot</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,7 +64,11 @@
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
+            <asp:Label ID="Label1" runat="server" Text="E-MAIL "></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged">enter mail here</asp:TextBox>
         </div>
+
+        <asp:Button ID="Button1" runat="server" Text="Submit" />
 
     </form>
 </body>
